@@ -5,32 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-<script>
-  const form = document.getElementById('contact-form');
-  const thankYou = document.getElementById('thank-you-message');
 
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (response.ok) {
-      form.style.display = 'none';
-      thankYou.style.display = 'block';
-      form.reset();
-    } else {
-      alert('Oops! Something went wrong.');
-    }
-  });
-
-  function resetForm() {
-    document.getElementById('thank-you-message').style.display = 'none';
-    form.style.display = 'block';
-  }
-</script>
 
 (function() {
   "use strict";
