@@ -339,183 +339,182 @@
     </section><!-- /Services Section -->
 
     
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Paulinenstr.44 72072Tübingen Germany</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call or Whatsapp Me</h3>
-                  <p>+491772718272</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Me</h3>
-                  <p>muhannmmad@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.431942901909!2d9.044742115721892!3d48.52113297925308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799f4dfd6b6b28b%3A0x2cd1f5c7ec4c0c53!2sPaulinenstra%C3%9Fe%2044%2C%2072072%20T%C3%BCbingen%2C%20Germany!5e0!3m2!1sen!2sde!4v1716277240573!5m2!1sen!2sde"
-                frameborder="0"
-                style="border:0; width: 100%; height: 270px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
-
-       <div class="col-lg-7">
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Section</title>
 
-  <!-- ✅ Bootstrap CSS (use your existing link if you already include it) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- ✅ Optional AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- AOS Animation CSS (optional) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
     body {
-      padding: 30px;
       background-color: #f8f9fa;
+      padding: 30px 0;
+    }
+    .info-wrap {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      height: 100%;
     }
     .php-email-form {
       background: #fff;
       padding: 30px;
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     #thank-you-message {
       display: none;
+      margin-top: 1.5rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-7">
+  <section id="contact" class="contact section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+    </div>
 
-        <!-- ✅ Contact Form -->
-        <form id="contact-form" action="https://formspree.io/f/xdkgvodv" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-4">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 align-items-stretch">
 
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Your Name</label>
-              <input type="text" name="name" id="name-field" class="form-control" required>
+        <!-- Contact Information -->
+        <div class="col-lg-5">
+          <div class="info-wrap">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0 fs-3 me-3"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Paulinenstr.44 72072 Tübingen Germany</p>
+              </div>
             </div>
-
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email-field" required>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0 fs-3 me-3"></i>
+              <div>
+                <h3>Call or Whatsapp Me</h3>
+                <p>+491772718272</p>
+              </div>
             </div>
-
-            <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject-field" required>
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0 fs-3 me-3"></i>
+              <div>
+                <h3>Email Me</h3>
+                <p>muhannmmad@gmail.com</p>
+              </div>
             </div>
-
-            <div class="col-md-12">
-              <label for="message-field" class="pb-2">Message</label>
-              <textarea class="form-control" name="message" rows="6" id="message-field" required></textarea>
-            </div>
-
-            <!-- Hidden input to disable spam CAPTCHA -->
-            <input type="hidden" name="_captcha" value="false">
-
-            <div class="col-md-12 text-center">
-              <button type="submit" class="btn btn-primary px-4">Send Message</button>
-            </div>
-
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.431942901909!2d9.044742115721892!3d48.52113297925308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799f4dfd6b6b28b%3A0x2cd1f5c7ec4c0c53!2sPaulinenstra%C3%9Fe%2044%2C%2072072%20T%C3%BCbingen%2C%20Germany!5e0!3m2!1sen!2sde!4v1716277240573!5m2!1sen!2sde"
+              frameborder="0"
+              style="border:0; width: 100%; height: 270px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-        </form>
+        </div>
 
-        <!-- ✅ Thank You Message -->
-        <div id="thank-you-message" class="text-center mt-4">
-          <h4 class="text-success">Thank you! Your message has been sent.</h4>
-          <a href="#" class="text-primary" onclick="resetForm()">← Send another message</a>
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" action="https://formspree.io/f/xdkgvodv" method="POST" novalidate>
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="form-label">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required />
+                </div>
+
+                <div class="col-12">
+                  <label for="subject-field" class="form-label">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required />
+                </div>
+
+                <div class="col-12">
+                  <label for="message-field" class="form-label">Message</label>
+                  <textarea class="form-control" name="message" rows="6" id="message-field" required></textarea>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary px-5">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+            <div id="thank-you-message" class="text-center mt-4">
+              <h4 class="text-success">Thank you! Your message has been sent.</h4>
+              <a href="#" class="text-primary" onclick="resetForm(event)">← Send another message</a>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ✅ Bootstrap JS + Popper -->
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- ✅ AOS Animation JS (Optional) -->
+  <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
-  <!-- ✅ JavaScript to handle Formspree + Thank You logic -->
   <script>
+    AOS.init();
+
     const form = document.getElementById('contact-form');
     const thankYou = document.getElementById('thank-you-message');
+
+    thankYou.style.display = 'none'; // hide on load
 
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       const data = new FormData(form);
+
       const response = await fetch(form.action, {
         method: form.method,
         body: data,
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: 'application/json' },
       });
+
       if (response.ok) {
         form.reset();
         form.style.display = 'none';
         thankYou.style.display = 'block';
       } else {
-        alert("Oops! Something went wrong. Please try again.");
+        alert('Oops! Something went wrong. Please try again.');
       }
     });
 
-    function resetForm() {
+    function resetForm(event) {
+      event.preventDefault();
       thankYou.style.display = 'none';
       form.style.display = 'block';
     }
   </script>
-
 </body>
 </html>
 
-
-
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
 
   </main>
 
