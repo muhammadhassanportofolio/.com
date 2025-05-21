@@ -391,117 +391,47 @@
           </div>
 
        <div class="col-lg-7">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-      background-color: #f9f9f9;
-    }
-    .form-section, .thank-you-section {
-      display: none;
-    }
-    .form-section.active, .thank-you-section.active {
-      display: block;
-    }
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
-      background-color: #28a745;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .thank-you-section h1 {
-      color: green;
-    }
-  </style>
-</head>
-<body>
+<div class="col-lg-7">
+  <form id="contact-form" action="https://formspree.io/f/xdkgvodv" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+    <div class="row gy-4">
 
-  <!-- ✅ Contact Form Section -->
-  <section class="form-section active" id="form-section">
-    <h1>Contact Us</h1>
-    <form id="contact-form" action="https://formspree.io/f/xdkgvodv" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" name="name" id="name" required>
+      <div class="col-md-6">
+        <label for="name-field" class="pb-2">Your Name</label>
+        <input type="text" name="name" id="name-field" class="form-control" required>
+      </div>
 
-      <label for="email">Your Email</label>
-      <input type="email" name="email" id="email" required>
+      <div class="col-md-6">
+        <label for="email-field" class="pb-2">Your Email</label>
+        <input type="email" name="email" id="email-field" class="form-control" required>
+      </div>
 
-      <label for="subject">Subject</label>
-      <input type="text" name="subject" id="subject" required>
+      <div class="col-md-12">
+        <label for="subject-field" class="pb-2">Subject</label>
+        <input type="text" name="subject" id="subject-field" class="form-control" required>
+      </div>
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" rows="6" required></textarea>
+      <div class="col-md-12">
+        <label for="message-field" class="pb-2">Message</label>
+        <textarea name="message" id="message-field" class="form-control" rows="6" required></textarea>
+      </div>
 
-      <!-- Optional spam protection -->
+      <!-- Hidden anti-spam field and redirect override -->
       <input type="hidden" name="_captcha" value="false">
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+      <div class="col-md-12 text-center">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
 
-  <!-- ✅ Thank You Section -->
-  <section class="thank-you-section" id="thank-you-section">
-    <h1>Thank You!</h1>
-    <p>Your message has been sent successfully. We'll get back to you soon.</p>
-    <a href="#" onclick="resetForm()">← Back to form</a>
-  </section>
+    </div>
+  </form>
 
-  <!-- ✅ JavaScript to handle form submission -->
-  <script>
-    const form = document.getElementById('contact-form');
-    const formSection = document.getElementById('form-section');
-    const thankYouSection = document.getElementById('thank-you-section');
+  <!-- Thank You Message -->
+  <div id="thank-you-message" class="text-center mt-4" style="display:none;">
+    <h4 style="color: green;">Thank you! Your message has been sent.</h4>
+    <a href="#" onclick="resetForm()">← Send another message</a>
+  </div>
+</div>
 
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        form.reset();
-        formSection.classList.remove('active');
-        thankYouSection.classList.add('active');
-      } else {
-        alert("Oops! Something went wrong. Please try again.");
-      }
-    });
-
-    function resetForm() {
-      thankYouSection.classList.remove('active');
-      formSection.classList.add('active');
-    }
-  </script>
-
-</body>
-</html>
 
 
 
