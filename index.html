@@ -84,53 +84,54 @@
 
   <main class="main">
 
-      <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
+  <!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
 
-        <!-- Background Image -->
-        <img src="assets/img/home.jpeg" alt="" data-aos="fade-in" class="">
+  <!-- Background Image -->
+  <img src="assets/img/home.jpeg" alt="" data-aos="fade-in" class="">
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <h2>Muhammad Hassan</h2>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Muhammad Hassan</h2>
 
-          <!-- First Typed Line -->
-          <p>I'm <span class="typed" data-typed-items="Designer, Developer, Photographer"></span></p>
+    <!-- First Typed Line (with blinking cursor) -->
+    <p>I'm <span id="typed-1"></span></p>
 
-          <!-- Second Typed Line -->
-          <p class="mt-3">Skilled in <span class="typed-secondary" data-typed-items="Web Design, Software Development, App Development, Graphic Design, Logo Design"></span></p>
-        </div>
+    <!-- Second Typed Line (also with blinking cursor) -->
+    <p class="mt-3">Skilled in <span id="typed-2"></span></p>
+  </div>
 
-      </section><!-- /Hero Section -->
+</section><!-- /Hero Section -->
 
-      <!-- Typed.js CDN -->
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- Typed.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-      <!-- Typed.js Initialization -->
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // First typed instance
-          if (document.querySelector('.typed')) {
-            new Typed('.typed', {
-              strings: document.querySelector('.typed').getAttribute('data-typed-items').split(','),
-              typeSpeed: 100,
-              backSpeed: 50,
-              backDelay: 2000,
-              loop: true
-            });
-          }
+<!-- Typed.js Initialization -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // First typed instance (with cursor)
+    new Typed('#typed-1', {
+      strings: ["Designer", "Developer", "Photographer"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|" // Default or customize here
+    });
 
-          // Second typed instance
-          if (document.querySelector('.typed-secondary')) {
-            new Typed('.typed-secondary', {
-              strings: document.querySelector('.typed-secondary').getAttribute('data-typed-items').split(','),
-              typeSpeed: 100,
-              backSpeed: 50,
-              backDelay: 2500,
-              loop: true
-            });
-          }
-        });
-      </script>
+    // Second typed instance (also with cursor)
+    new Typed('#typed-2', {
+      strings: ["Web Design", "Software Development", "App Development", "Graphic Design", "Logo Design"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2500,
+      loop: true,
+      showCursor: true, // Now showing second cursor
+      cursorChar: "|"   // You can change it (e.g. "_", "█")
+    });
+  });
+</script>
+
 
     <!-- About Section -->
     <section id="about" class="about section">
